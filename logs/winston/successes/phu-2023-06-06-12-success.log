@@ -52,3 +52,9 @@
   label: 'Ph1',
   timestamp: '2023-06-06T06:03:32.457Z'
 }
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Ph1',
+  timestamp: '2023-06-06T06:04:52.975Z'
+}
