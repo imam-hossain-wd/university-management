@@ -1,0 +1,30 @@
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Ph1',
+  timestamp: '2023-06-12T22:00:54.591Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Ph1',
+  timestamp: '2023-06-12T22:00:56.486Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Ph1',
+  timestamp: '2023-06-12T22:03:17.560Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Ph1',
+  timestamp: '2023-06-12T22:08:23.442Z'
+}
+{
+  message: 'database is connected successfully',
+  level: 'info',
+  label: 'Ph1',
+  timestamp: '2023-06-12T22:08:52.552Z'
+}

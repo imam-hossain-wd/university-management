@@ -1,16 +1,19 @@
-import { User } from './user.model'
+import { User } from './user.model';
 
-export const findLastUserId = async () => {
+export const findLastUserId = async (): Promise<string | undefined> => {
   const lastUser = await User.findOne({}, { id: 1, _id: 0 })
-    .sort({ createAt: -1 })
-    .lean()
-  console.log(lastUser)
-  return lastUser?.id
-}
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
 
-export const generateUserId = async () => {
-  const currentId = (await findLastUserId()) || (0).toString().padStart(5, '0') //00000
-  //increment by 1
-  const incrementedId = (parseInt(currentId) + 1).toString().padStart(5, '0')
-  return incrementedId
-}
+  return lastUser?.id;
+};
+
+export const generateUserId = async (): Promise<string> => {
+  const currentId = (await findLastUserId()) || (0).toString().padStart(5, '0'); //
+  const number1 = parseInt(currentId, 10);
+  const number = number1 + 1;
+  const paddedId = String(number).padStart(5, '0');
+  return paddedId;
+};

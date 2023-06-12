@@ -1,11 +1,8 @@
-import { Router } from 'express'
-import controller from './user.controller'
+import { Router } from 'express';
+import controller from './user.controller';
 
-const router = Router()
+const router = Router();
 
-router.post('/create-user', controller.createduser)
-router.get('/', controller.getUser)
-router.delete('/user/:id', controller.deleteUser)
-router.put('/user/:id', controller.updatePassword)
+router.post('/create-user', controller.createduser);
 
-export default router
+export default router;
